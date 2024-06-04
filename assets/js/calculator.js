@@ -29,16 +29,16 @@ function calculate(){
 		range = (getWeightFromBmi(minBmi, height)).toFixed(1) + ' ' + weightUnit + ' - ' +  (getWeightFromBmi(maxBmi, height)).toFixed(1) + ' ' + weightUnit;
 		bmiRange = minBmi +' ' + bmiUnit + ' - ' + maxBmi + ' ' + bmiUnit;
 		if(bmi < minBmi){
-			category = 'Underweight';
+			category = 'น้ำหนักต่ำกว่าเกณฑ์';
 		}
 		else if(bmi < maxBmi){
-			category = 'Healthy weight';
+			category = 'น้ำหนักที่ดีต่อสุขภาพ';
 		}
 		else if(bmi > maxBmi){
-			category = 'At risk of overweight';
+			category = 'มีความเสี่ยงที่จะมีน้ำหนักเกิน';
 		}
-		diff.gainLabel = 'Gain to reach a BMI of ' + minBmi + bmiUnit;
-		diff.loseLabel = 'Lose to reach a BMI of ' + maxBmi + bmiUnit;
+		diff.gainLabel = 'เพิ่มน้ำหนักเพื่อให้ถึงค่าดัชนีมวลกายของ ' + minBmi + bmiUnit;
+		diff.loseLabel = 'ลดน้ำหนักเพื่อให้ได้ค่าดัชนีมวลกายของ ' + maxBmi + bmiUnit;
 
 		if(bmi < minBmi){
 			diff.gain = (getWeightFromBmi((minBmi), height) - originWeight).toFixed(1) + weightUnit;
@@ -51,16 +51,16 @@ function calculate(){
 		range = (getWeightFromBmi(18.5, height)).toFixed(1) + ' ' + weightUnit + ' - ' + (getWeightFromBmi(25, height)).toFixed(1) + ' ' + weightUnit;
 		bmiRange = '18.5 ' + bmiUnit + ' - ' +  '25 ' + bmiUnit;
 		if(bmi < 18.5){
-			category = 'Underweight';
+			category = 'น้ำหนักน้อยเกินไป';
 		}
 		else if(bmi < 25){
-			category = 'Healthy weight';
+			category = 'น้ำหนักที่ดีต่อสุขภาพ';
 		}
 		else if(bmi < 30){
-			category = 'Overweight';
+			category = 'น้ำหนักเกิน';
 		}
 		else {
-			category = 'Obese';
+			category = 'อ้วน';
 		}
 
 		if(bmi < 18.5){
