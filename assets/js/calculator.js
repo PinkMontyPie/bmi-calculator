@@ -19,8 +19,8 @@ function calculate(){
 	let diff = {
 		gain: '-',
 		lose: '-',
-		gainLabel: 'Gain to reach a BMI of 18.5 kg/m<sup>2</sup>',
-		loseLabel: 'Lose to reach a BMI of 25 kg/m<sup>2</sup>',
+		gainLabel: 'เพิ่มน้ำหนักเพื่อให้ถึงค่าดัชนีมวลกายของ 18.5 kg/m<sup>2</sup>',
+		loseLabel: 'ลดน้ำหนักเพื่อให้ได้ค่าดัชนีมวลกายของ 25 kg/m<sup>2</sup>',
 	};
 	const pi = ((weight) / (height * height * height)).toFixed(2);
 	if(age < 21) {
