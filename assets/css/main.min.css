@@ -1,48 +1,9 @@
-@font-face {
-    font-family: "IBM Plex Sans Thai Looped";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400&display=swap");
-  }
-  @font-face {
-    font-family: "IBM Plex Sans Thai Looped";
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500&display=swap");
-  }
-  @font-face {
-    font-family: "IBM Plex Sans Thai Looped";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@600&display=swap");
-  }
-  @font-face {
-    font-family: "IBM Plex Sans Thai Looped";
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@800&display=swap");
-  }
-  * {
-    font-family: "IBM Plex Sans Thai Looped", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeSpeed;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-  }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+body,button {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
 .input-field {
   width: 100%;
   gap: 8px;
@@ -165,7 +126,7 @@
   border-color: #c3d0fa;
 }
 .input-field--separator-sky path[stroke] {
-  stroke: #4338ca;
+  stroke: #2BA8E0;
 }
 .input-field--error {
   z-index: 1;
@@ -602,7 +563,7 @@ html.dark .input-button:hover {
   color: #374151;
 }
 .checkbox__input:checked + .checkbox__box {
-  background-color: #5045e5;
+  background-color: #2BA8E0;
 }
 .checkbox__input:checked + .checkbox__box::after {
   left: 22px;
@@ -1062,19 +1023,19 @@ html.dark .modal-share__textarea {
 }
 .button--copy,
 .button--primary {
-  background-color: #5045e5;
-  border: 1px solid #5045e5;
+  background-color: #2BA8E0;
+  border: 1px solid #2BA8E0;
   color: #fff;
 }
 .button--copy:hover:not(:disabled):not(:active),
 .button--primary:hover:not(:disabled):not(:active) {
-  background-color: #4338ca;
+  background-color: #2BA8E0;
 }
 .button--copy:active,
 .button--primary:active {
   transition: 0s;
-  background-color: #6366f1;
-  border-color: #6366f1;
+  background-color: #2BA8E0;
+  border-color: #2BA8E0;
 }
 .button--copy {
   height: 42px;
@@ -1169,16 +1130,16 @@ html.dark .button--secondary {
 }
 .calculator-content--basic button:not(.button-switcher).indigo,
 .calculator-content--scientific button:not(.button-switcher).indigo {
-  background-color: #5045e5;
+  background-color: #2BA8E0;
   color: #fff;
 }
 .calculator-content--basic button:not(.button-switcher).indigo:hover,
 .calculator-content--scientific button:not(.button-switcher).indigo:hover {
-  background-color: #4338ca;
+  background-color: #2BA8E0;
 }
 .calculator-content--basic button:not(.button-switcher).indigo:active,
 .calculator-content--scientific button:not(.button-switcher).indigo:active {
-  background-color: #3730a3;
+  background-color: #2BA8E0;
 }
 .calculator-content--basic button:not(.button-switcher).action,
 .calculator-content--scientific button:not(.button-switcher).action {
@@ -1210,7 +1171,7 @@ html.dark .button--secondary {
 .calculator-content--basic button:not(.button-switcher).basic-button--active,
 .calculator-content--scientific
   button:not(.button-switcher).basic-button--active {
-  border-color: #5045e5;
+  border-color: #2BA8E0;
 }
 .calculator-content--basic button:not(.button-switcher).purple,
 .calculator-content--scientific button:not(.button-switcher).purple {
@@ -1219,7 +1180,7 @@ html.dark .button--secondary {
   background-color: #ede9fe;
   padding-top: 0;
   padding-bottom: 0;
-  color: #4c1d95;
+  color: #2BA8E0;
 }
 .calculator-content--basic button:not(.button-switcher).purple:hover,
 .calculator-content--scientific button:not(.button-switcher).purple:hover {
@@ -1233,7 +1194,7 @@ html.dark .button--secondary {
   button:not(.button-switcher).basic-button--active.purple,
 .calculator-content--scientific
   button:not(.button-switcher).basic-button--active.purple {
-  border-color: #7c3aed;
+  border-color: #2BA8E0;
 }
 .calculator-content--basic button:not(.button-switcher).gray,
 .calculator-content--scientific button:not(.button-switcher).gray {
@@ -1299,8 +1260,8 @@ html.dark .calculator-content--scientific button:not(.button-switcher):hover {
 }
 html.dark .calculator-content--basic button:not(.button-switcher).indigo,
 html.dark .calculator-content--scientific button:not(.button-switcher).indigo {
-  border-color: #3730a3;
-  background-color: #3730a3;
+  border-color: #2BA8E0;
+  background-color: #2BA8E0;
 }
 html.dark .calculator-content--basic button:not(.button-switcher).indigo:active,
 html.dark .calculator-content--basic button:not(.button-switcher).indigo:hover,
@@ -1311,12 +1272,12 @@ html.dark
   .calculator-content--scientific
   button:not(.button-switcher).indigo:hover {
   border-color: #a5b4fc;
-  background-color: #3730a3;
+  background-color: #2BA8E0;
 }
 html.dark .calculator-content--basic button:not(.button-switcher).action,
 html.dark .calculator-content--scientific button:not(.button-switcher).action {
-  border-color: #4338ca;
-  background-color: #4338ca;
+  border-color: #2BA8E0;
+  background-color: #2BA8E0;
 }
 html.dark .calculator-content--basic button:not(.button-switcher).action:active,
 html.dark .calculator-content--basic button:not(.button-switcher).action:hover,
@@ -1505,10 +1466,10 @@ html.dark
   background: #eef2ff;
 }
 .button-switcher--active path[stroke] {
-  stroke: #5045e5;
+  stroke: #2BA8E0;
 }
 .button-switcher--active path[fill] {
-  fill: #5045e5;
+  fill: #2BA8E0;
 }
 .button-switcher--active .button-switcher__text {
   color: #312e81;
@@ -1613,7 +1574,7 @@ html.dark .tab-item svg path[stroke] {
   fill: #e0e7ff;
 }
 .tab-item--active svg path[stroke] {
-  stroke: #5045e5;
+  stroke: #2BA8E0;
 }
 html.dark .tab-item--active svg path[fill] {
   fill: #818cf8;
@@ -1630,7 +1591,7 @@ html.dark .tab-item--active svg path[stroke] {
   transition: all 0.15s;
   padding: 6px;
   display: flex;
-  background: #5045e5;
+  background: #2BA8E0;
   position: relative;
   cursor: pointer;
 }
@@ -1868,13 +1829,13 @@ html.dark .header-nav__link--main:hover {
   background: #f9fafb;
 }
 .header-popup__button--active {
-  color: #6366f1 !important;
+  color: #2BA8E0 !important;
 }
 .header-popup__button--active path[stroke] {
-  stroke: #6366f1;
+  stroke: #2BA8E0;
 }
 .header-popup__button--active path[fill] {
-  fill: #6366f1;
+  fill: #2BA8E0;
 }
 .header-popup--main {
   background: #374151;
@@ -2007,7 +1968,7 @@ html.dark .header-line {
   background-color: #4b5563;
 }
 .header-lang__select--active {
-  color: #6366f1;
+  color: #2BA8E0;
 }
 html.dark .header-lang {
   color: #fff;
@@ -2032,7 +1993,7 @@ html.dark .header-lang__select:hover {
   background-color: #4b5563;
 }
 html.dark .header-lang__select--active {
-  color: #6366f1;
+  color: #2BA8E0;
 }
 .footer {
   background-color: #1f2937;
@@ -2406,7 +2367,7 @@ html.dark .intro__calculator .calculator-content {
   font-weight: 600;
   color: #fff;
   border-radius: 10px;
-  background: #6366f1;
+  background: #2BA8E0;
 }
 .intro-link__text {
   display: flex;
@@ -2604,17 +2565,17 @@ html.dark .calculators-category__title {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: center;
-  color: #5045e5;
+  color: #2BA8E0;
   transition: 0.15s ease;
 }
 .calculator-category__link:hover {
-  color: #4338ca;
+  color: #2BA8E0;
 }
 html.dark .calculator-category__link {
-  color: #6366f1;
+  color: #2BA8E0;
 }
 html.dark .calculator-category__link:hover {
-  color: #4338ca;
+  color: #2BA8E0;
 }
 .company__container {
   margin: 0 auto;
@@ -4197,14 +4158,14 @@ html.dark .calculator-content__geometry path[fill="#fff"],
 html.dark .calculator-content__geometry rect[fill="#fff"] {
   fill: #1f2937;
 }
-html.dark .calculator-content__geometry circle[stroke="#7C3AED"],
-html.dark .calculator-content__geometry ellipse[stroke="#7C3AED"],
-html.dark .calculator-content__geometry path[stroke="#7C3AED"],
-html.dark .calculator-content__geometry rect[stroke="#7C3AED"] {
-  stroke: #a78bfa;
+html.dark .calculator-content__geometry circle[stroke="#2BA8E0"],
+html.dark .calculator-content__geometry ellipse[stroke="#2BA8E0"],
+html.dark .calculator-content__geometry path[stroke="#2BA8E0"],
+html.dark .calculator-content__geometry rect[stroke="#2BA8E0"] {
+  stroke: #2BA8E0;
 }
-html.dark .calculator-content__geometry path[fill="#7C3AED"] {
-  fill: #a78bfa;
+html.dark .calculator-content__geometry path[fill="#2BA8E0"] {
+  fill: #2BA8E0;
 }
 .calculator-content--small {
   padding: 12px 32px;
