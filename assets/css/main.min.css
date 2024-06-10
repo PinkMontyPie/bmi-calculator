@@ -3107,10 +3107,13 @@ html.dark .tag--purple {
 .calculator-result {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.0588235294),
-    0 1px 3px 0 rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.0588235294),    0 1px 3px 0 rgba(0, 0, 0, 0.1019607843);
   background-color: #eff6ff;
   overflow: hidden;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .calculator-result__col {
   display: flex;
@@ -3763,14 +3766,11 @@ html.dark .table-progress-list__item {
   height: 0.5rem;
   border-radius: 6px;
   position: relative;
-  background: linear-gradient(
-    90deg,
-    #ff8686 0,
-    #ffdd84 25%,
-    #9cff84 50%,
-    #ffdd86 75%,
-    #ff8585 100%
-  );
+  background: linear-gradient(    90deg,    #ff8686 0,    #ffdd84 25%,    #9cff84 50%,    #ffdd86 75%,    #ff8585 100%  );
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 .table-progress--fat {
   background: linear-gradient(

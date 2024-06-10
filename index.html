@@ -40,6 +40,7 @@
       crossorigin
       type="font/woff2"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript">
       window._ = document.getElementById.bind(document);
       window.$ = document.querySelector.bind(document);
@@ -53,8 +54,8 @@
   <body
     style="background-color: transparent !important; min-height: 0 !important"
   >
-    <div style="width: 100%">
-      <div style="width: 350px; float: left; padding: 15px">
+    <div class="w-full flex flex-col md:flex-row">
+      <div class="p-4">
         <div class="calculator-settings">
           <div class="calculator-setting" id="calculator_form">
             <div class="calculator-content col">
@@ -314,7 +315,7 @@
           </div>
         </div>
       </div>
-      <div style="float: left; padding: 15px; overflow: scroll">
+      <div>
         <div
           class="calculator-result calculator-result--error col"
           id="error-box"
@@ -364,89 +365,95 @@
               }
             }
           </style>
-          <div class="calculator-result col">
-            <p class="table-cell table-cell--dark table-cell--only-title">
-              ดัชนีมวลกาย (BMI)
-            </p>
-            <div
-              class="table-cell table-cell--big table-cell--age table-cell--only row"
-            >
-              <div class="table-progress-list">
-                <p class="table-progress-list__item underweight">
-                  น้ำหนักต่ำกว่าเกณฑ์
-                </p>
-                <p class="table-progress-list__item normal">น้ำหนักปกติ</p>
-                <p class="table-progress-list__item overweight">น้ำหนักเกิน</p>
-                <p class="table-progress-list__item obesity">โรคอ้วน</p>
-              </div>
+          <div class="p-5">
+            <div class="calculator-result col w-full">
+              <p class="table-cell table-cell--dark table-cell--only-title">
+                ดัชนีมวลกาย (BMI)
+              </p>
               <div
-                class="table-progress"
-                style="
-                  background: linear-gradient(
-                    90deg,
-                    #ff8686 0,
-                    #ffdd84 16%,
-                    #ffdd84 24%,
-                    #9cff84 27%,
-                    #9cff84 50%,
-                    #ffdd86 55%,
-                    #ffdd86 70%,
-                    #ff8585 75%,
-                    #ff8585 100%
-                  );
-                "
+                class="table-cell table-cell--big table-cell--age table-cell--only row"
               >
+                <div class="table-progress-list pb-4">
+                  <p class="table-progress-list__item underweight">
+                    น้ำหนักต่ำกว่าเกณฑ์
+                  </p>
+                  <p class="table-progress-list__item normal">น้ำหนักปกติ</p>
+                  <p class="table-progress-list__item overweight">
+                    น้ำหนักเกิน
+                  </p>
+                  <p class="table-progress-list__item obesity">โรคอ้วน</p>
+                </div>
                 <div
-                  class="table-progress__indicator"
-                  style="left: 48.8%"
-                ></div>
+                  class="table-progress"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #ff8686 0,
+                      #ffdd84 16%,
+                      #ffdd84 24%,
+                      #9cff84 27%,
+                      #9cff84 50%,
+                      #ffdd86 55%,
+                      #ffdd86 70%,
+                      #ff8585 75%,
+                      #ff8585 100%
+                    );
+                  "
+                >
+                  <div
+                    class="table-progress__indicator"
+                    style="left: 48.8%"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="result-table__wrapper">
-              <table class="result-table">
-                <thead>
-                  <tr>
-                    <th>ดัชนีมวลกาย (BMI)</th>
-                    <td id="bmi-value" class="semibold animate">
-                      24.2 กก./ตร.ม.
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>หมวดหมู่ BMI</th>
-                    <td id="bmi-category">น้ำหนักปกติ</td>
-                  </tr>
-                  <tr>
-                    <th>ช่วง BMI ที่เหมาะสม</th>
-                    <td id="bmi-range" class="animate">
-                      18.5 กก./ตร.ม. - 25 กก./ตร.ม.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>น้ำหนักที่เหมาะสมสำหรับความสูง</th>
-                    <td id="weight-range" class="animate">
-                      135.1 ปอนด์ - 182.6 ปอนด์
-                    </td>
-                  </tr>
-                  <tr>
-                    <th id="weight-gain-label">
-                      น้ำหนักที่จะเพิ่มเพื่อให้ถึง BMI 18.5 กก./ตร.ม.
-                    </th>
-                    <td id="weight-gain" class="animate">-</td>
-                  </tr>
-                  <tr>
-                    <th id="weight-lose-label">
-                      น้ำหนักที่จะลดเพื่อให้ถึง BMI 25 กก./ตร.ม.
-                    </th>
-                    <td id="weight-lose" class="animate">-</td>
-                  </tr>
-                  <tr>
-                    <th>ดัชนี Ponderal</th>
-                    <td id="ponderal-index" class="animate">13.27 กก./ตร.ม.</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="result-table__wrapper">
+                <table class="result-table">
+                  <thead>
+                    <tr>
+                      <th>ดัชนีมวลกาย (BMI)</th>
+                      <td id="bmi-value" class="semibold animate">
+                        24.2 กก./ตร.ม.
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>หมวดหมู่ BMI</th>
+                      <td id="bmi-category">น้ำหนักปกติ</td>
+                    </tr>
+                    <tr>
+                      <th>ช่วง BMI ที่เหมาะสม</th>
+                      <td id="bmi-range" class="animate">
+                        18.5 กก./ตร.ม. - 25 กก./ตร.ม.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>น้ำหนักที่เหมาะสมสำหรับความสูง</th>
+                      <td id="weight-range" class="animate">
+                        135.1 ปอนด์ - 182.6 ปอนด์
+                      </td>
+                    </tr>
+                    <tr>
+                      <th id="weight-gain-label">
+                        น้ำหนักที่จะเพิ่มเพื่อให้ถึง BMI 18.5 กก./ตร.ม.
+                      </th>
+                      <td id="weight-gain" class="animate">-</td>
+                    </tr>
+                    <tr>
+                      <th id="weight-lose-label">
+                        น้ำหนักที่จะลดเพื่อให้ถึง BMI 25 กก./ตร.ม.
+                      </th>
+                      <td id="weight-lose" class="animate">-</td>
+                    </tr>
+                    <tr>
+                      <th>ดัชนี Ponderal</th>
+                      <td id="ponderal-index" class="animate">
+                        13.27 กก./ตร.ม.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </span>
