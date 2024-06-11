@@ -12,34 +12,6 @@
       name="description"
       content="เครื่องคำนวณดัชนีมวลกาย (BMI) ฟรีที่ใช้ข้อมูลจาก WHO และ CDC เพื่อคำนวณและจำแนก BMI สำหรับเด็กและผู้ใหญ่"
     />
-    <link
-      rel="preload"
-      href="./assets/fonts/inter-v12-latin-regular.woff2"
-      as="font"
-      crossorigin
-      type="font/woff2"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/inter-v12-latin-500.woff2"
-      as="font"
-      crossorigin
-      type="font/woff2"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/inter-v12-latin-600.woff2"
-      as="font"
-      crossorigin
-      type="font/woff2"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/inter-v12-latin-800.woff2"
-      as="font"
-      crossorigin
-      type="font/woff2"
-    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript">
       window._ = document.getElementById.bind(document);
@@ -168,7 +140,7 @@
                 <label class="input col">
                   <p class="input__title">ส่วนสูง</p>
                   <div class="input-field input-field--height row">
-                    <input
+                    <!-- <input
                       type="text"
                       class="input-field__input imperial-system-item"
                       id="height_ft"
@@ -190,11 +162,11 @@
                     />
                     <span class="input-field__hint imperial-system-item"
                       >นิ้ว</span
-                    >
+                    > -->
 
                     <input
                       type="text"
-                      class="input-field__input metric-system-item system-item-hidden"
+                      class="input-field__input metric-system-item"
                       id="height"
                       data-target="height"
                       value="182"
@@ -208,7 +180,7 @@
                 <label class="input col">
                   <p class="input__title">น้ำหนัก</p>
                   <div class="input-field row">
-                    <input
+                    <!-- <input
                       type="text"
                       class="input-field__input imperial-system-item"
                       id="weight_imperial"
@@ -219,11 +191,11 @@
                     />
                     <span class="input-field__hint imperial-system-item"
                       >ปอนด์</span
-                    >
+                    > -->
 
                     <input
                       type="text"
-                      class="input-field__input metric-system-item system-item-hidden"
+                      class="input-field__input metric-system-item "
                       id="weight"
                       data-target="weight"
                       data-formula="value / 2.20462262185"
@@ -231,7 +203,7 @@
                       onchange="sysnumconv(this)"
                     />
                     <span
-                      class="input-field__hint metric-system-item system-item-hidden"
+                      class="input-field__hint metric-system-item"
                       >กก.</span
                     >
                   </div>
@@ -244,6 +216,7 @@
             >
               <button
                 class="system-switcher"
+                style="display: none;"
                 onclick="toggleSystem(this)"
                 aria-label="สลับระบบ"
               >
@@ -278,14 +251,14 @@
                 </svg>
               </button>
 
-              <script type="text/javascript">
+              <!-- <script type="text/javascript">
                 $$(".imperial-system-item, .metric-system-item").forEach(
                   function (element, index) {
                     element.classList.remove("system-item-hidden");
                   }
                 );
                 $$(
-                  defaultSystem == "imperial"
+                  defaultSystem == "metric"
                     ? ".imperial-system-item"
                     : ".metric-system-item"
                 ).forEach(function (element, index) {
@@ -295,7 +268,22 @@
                   $(".system-switcher").classList.add(
                     "system-switcher--active"
                   );
-              </script>
+              </script> -->
+
+              <script type="text/javascript">
+                // Select all elements with the class 'imperial-system-item' and add the 'system-item-hidden' class to hide them
+                $$(".imperial-system-item").forEach(function (element, index) {
+                    element.classList.add("system-item-hidden");
+                });
+            
+                // Select all elements with the class 'metric-system-item' and remove the 'system-item-hidden' class to show them
+                $$(".metric-system-item").forEach(function (element, index) {
+                    element.classList.remove("system-item-hidden");
+                });
+            
+                // Add the 'system-switcher--active' class to the element with the class 'system-switcher' to indicate that the metric system is active
+                $(".system-switcher").classList.add("system-switcher--active");
+            </script>
 
               <button
                 class="button button--primary ml-auto"
@@ -430,7 +418,7 @@
                     <tr>
                       <th>น้ำหนักที่เหมาะสมสำหรับความสูง</th>
                       <td id="weight-range" class="animate">
-                        135.1 ปอนด์ - 182.6 ปอนด์
+                        135.1 kgs - 182.6 kgs
                       </td>
                     </tr>
                     <tr>
