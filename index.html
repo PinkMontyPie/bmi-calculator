@@ -17,7 +17,7 @@
       window._ = document.getElementById.bind(document);
       window.$ = document.querySelector.bind(document);
       window.$$ = document.querySelectorAll.bind(document);
-      window.defaultSystem = "imperial";
+      window.defaultSystem = "metric";
       localStorage.setItem("theme", "light");
     </script>
     <link rel="stylesheet" href="./assets/css/main.min.css" />
@@ -27,10 +27,10 @@
     style="background-color: transparent !important; min-height: 0 !important"
   >
     <div class="w-full flex flex-col md:flex-row">
-      <div class="p-4">
-        <div class="calculator-settings">
+      <div class="pb-8 md:p-4 lg:max-w-[400px]">
+        <div class="calculator-settingsp">
           <div class="calculator-setting" id="calculator_form">
-            <div class="calculator-content col">
+            <div class="calculator-content col p-[40px]">
               <div class="input-wrapper row">
                 <label class="input col">
                   <input type="hidden" value="male" id="gender" />
@@ -212,7 +212,7 @@
             </div>
 
             <div
-              class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row"
+              class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row px-[40px] py-[20px]"
             >
               <button
                 class="system-switcher"
@@ -286,7 +286,7 @@
             </script>
 
               <button
-                class="button button--primary ml-auto"
+                class="button button--primary w-full p-2 "
                 onclick="calculate(this); animateElements();"
                 data-action="calculate"
                 id="action-button"
@@ -353,15 +353,15 @@
               }
             }
           </style>
-          <div class="p-5">
+          <div class="md:p-4">
             <div class="calculator-result col w-full">
-              <p class="table-cell table-cell--dark table-cell--only-title">
+              <p class="table-cell table-cell--dark table-cell--only-title px-[40px] py-[20px]">
                 ดัชนีมวลกาย (BMI)
               </p>
               <div
-                class="table-cell table-cell--big table-cell--age table-cell--only row"
+                class="table-cell table-cell--big table-cell--age table-cell--only row px-[40px]"
               >
-                <div class="table-progress-list pb-4">
+                <div class="flex w-full pb-5 justify-between">
                   <p class="table-progress-list__item underweight">
                     น้ำหนักต่ำกว่าเกณฑ์
                   </p>

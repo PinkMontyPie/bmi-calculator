@@ -126,7 +126,7 @@ body,button {
   border-color: #c3d0fa;
 }
 .input-field--separator-sky path[stroke] {
-  stroke: #2BA8E0;
+  stroke: #18a69d;
 }
 .input-field--error {
   z-index: 1;
@@ -454,7 +454,7 @@ html.dark .input-wrapper--square > .input-field__hint {
 }
 .input__title--work-hours-calculator {
   position: relative;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .input--abv {
   max-width: 62px;
@@ -496,7 +496,7 @@ html.dark .input__title {
   color: #d1d5db;
 }
 html.dark .input__title--work-hours-calculator {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .hidden,
 .system-item-hidden {
@@ -563,7 +563,7 @@ html.dark .input-button:hover {
   color: #374151;
 }
 .checkbox__input:checked + .checkbox__box {
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .checkbox__input:checked + .checkbox__box::after {
   left: 22px;
@@ -934,7 +934,7 @@ html.dark .modal-search-item:hover {
 }
 .modal-share__button--active {
   background: #dbeafe;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .modal-share__textarea {
   display: block;
@@ -1004,9 +1004,8 @@ html.dark .modal-share__textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 20px;
   border-radius: 6px;
   cursor: pointer;
@@ -1023,19 +1022,19 @@ html.dark .modal-share__textarea {
 }
 .button--copy,
 .button--primary {
-  background-color: #2BA8E0;
-  border: 1px solid #2BA8E0;
+  background-color: #18a69d;
+  border: 1px solid #18a69d;
   color: #fff;
 }
 .button--copy:hover:not(:disabled):not(:active),
 .button--primary:hover:not(:disabled):not(:active) {
-  background-color: #2787B1;
+  background-color: #128f8a;
 }
 .button--copy:active,
 .button--primary:active {
   transition: 0s;
-  background-color: #2787B1;
-  border-color: #2787B1;
+  background-color: #128f8a;
+  border-color: #128f8a;
 }
 .button--copy {
   height: 42px;
@@ -1130,16 +1129,16 @@ html.dark .button--secondary {
 }
 .calculator-content--basic button:not(.button-switcher).indigo,
 .calculator-content--scientific button:not(.button-switcher).indigo {
-  background-color: #2BA8E0;
+  background-color: #18a69d;
   color: #fff;
 }
 .calculator-content--basic button:not(.button-switcher).indigo:hover,
 .calculator-content--scientific button:not(.button-switcher).indigo:hover {
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .calculator-content--basic button:not(.button-switcher).indigo:active,
 .calculator-content--scientific button:not(.button-switcher).indigo:active {
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .calculator-content--basic button:not(.button-switcher).action,
 .calculator-content--scientific button:not(.button-switcher).action {
@@ -1171,7 +1170,7 @@ html.dark .button--secondary {
 .calculator-content--basic button:not(.button-switcher).basic-button--active,
 .calculator-content--scientific
   button:not(.button-switcher).basic-button--active {
-  border-color: #2BA8E0;
+  border-color: #18a69d;
 }
 .calculator-content--basic button:not(.button-switcher).purple,
 .calculator-content--scientific button:not(.button-switcher).purple {
@@ -1180,7 +1179,7 @@ html.dark .button--secondary {
   background-color: #ede9fe;
   padding-top: 0;
   padding-bottom: 0;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .calculator-content--basic button:not(.button-switcher).purple:hover,
 .calculator-content--scientific button:not(.button-switcher).purple:hover {
@@ -1194,7 +1193,7 @@ html.dark .button--secondary {
   button:not(.button-switcher).basic-button--active.purple,
 .calculator-content--scientific
   button:not(.button-switcher).basic-button--active.purple {
-  border-color: #2BA8E0;
+  border-color: #18a69d;
 }
 .calculator-content--basic button:not(.button-switcher).gray,
 .calculator-content--scientific button:not(.button-switcher).gray {
@@ -1260,8 +1259,8 @@ html.dark .calculator-content--scientific button:not(.button-switcher):hover {
 }
 html.dark .calculator-content--basic button:not(.button-switcher).indigo,
 html.dark .calculator-content--scientific button:not(.button-switcher).indigo {
-  border-color: #2BA8E0;
-  background-color: #2BA8E0;
+  border-color: #18a69d;
+  background-color: #18a69d;
 }
 html.dark .calculator-content--basic button:not(.button-switcher).indigo:active,
 html.dark .calculator-content--basic button:not(.button-switcher).indigo:hover,
@@ -1272,12 +1271,12 @@ html.dark
   .calculator-content--scientific
   button:not(.button-switcher).indigo:hover {
   border-color: #a5b4fc;
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 html.dark .calculator-content--basic button:not(.button-switcher).action,
 html.dark .calculator-content--scientific button:not(.button-switcher).action {
-  border-color: #2BA8E0;
-  background-color: #2BA8E0;
+  border-color: #18a69d;
+  background-color: #18a69d;
 }
 html.dark .calculator-content--basic button:not(.button-switcher).action:active,
 html.dark .calculator-content--basic button:not(.button-switcher).action:hover,
@@ -1440,7 +1439,7 @@ html.dark
   z-index: -1;
 }
 .button-switcher:not(.button-switcher--active):hover {
-  background: #f9fafb;
+  background: #F0FDFB;
 }
 .button-switcher path[stroke] {
   stroke: #9ca3af;
@@ -1462,14 +1461,14 @@ html.dark
   z-index: 10;
 }
 .button-switcher--active::after {
-  border-color: #c3d0fa;
-  background: #eef2ff;
+  border-color: #CEF9F2;
+  background:  #F0FDFB;
 }
 .button-switcher--active path[stroke] {
-  stroke: #2BA8E0;
+  stroke: #18a69d;
 }
 .button-switcher--active path[fill] {
-  fill: #2BA8E0;
+  fill: #18a69d;
 }
 .button-switcher--active .button-switcher__text {
   color: #312e81;
@@ -1561,20 +1560,20 @@ html.dark .tab-item svg path[stroke] {
   height: 0;
   position: absolute;
   bottom: -1px;
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .tab-item--active {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .tab-item--active::after {
   height: 2px;
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .tab-item--active svg path[fill] {
   fill: #e0e7ff;
 }
 .tab-item--active svg path[stroke] {
-  stroke: #2BA8E0;
+  stroke: #18a69d;
 }
 html.dark .tab-item--active svg path[fill] {
   fill: #818cf8;
@@ -1591,7 +1590,7 @@ html.dark .tab-item--active svg path[stroke] {
   transition: all 0.15s;
   padding: 6px;
   display: flex;
-  background: #2BA8E0;
+  background: #18a69d;
   position: relative;
   cursor: pointer;
 }
@@ -1829,13 +1828,13 @@ html.dark .header-nav__link--main:hover {
   background: #f9fafb;
 }
 .header-popup__button--active {
-  color: #2BA8E0 !important;
+  color: #18a69d !important;
 }
 .header-popup__button--active path[stroke] {
-  stroke: #2BA8E0;
+  stroke: #18a69d;
 }
 .header-popup__button--active path[fill] {
-  fill: #2BA8E0;
+  fill: #18a69d;
 }
 .header-popup--main {
   background: #374151;
@@ -1895,7 +1894,7 @@ html.dark .header-popup__button:hover {
   font-weight: 500;
 }
 .header-breadcrumbs__link--text:hover {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 html.dark .header-breadcrumbs__separate path[fill] {
   fill: #6b7280;
@@ -1968,7 +1967,7 @@ html.dark .header-line {
   background-color: #4b5563;
 }
 .header-lang__select--active {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 html.dark .header-lang {
   color: #fff;
@@ -1993,7 +1992,7 @@ html.dark .header-lang__select:hover {
   background-color: #4b5563;
 }
 html.dark .header-lang__select--active {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .footer {
   background-color: #1f2937;
@@ -2367,7 +2366,7 @@ html.dark .intro__calculator .calculator-content {
   font-weight: 600;
   color: #fff;
   border-radius: 10px;
-  background: #2BA8E0;
+  background: #18a69d;
 }
 .intro-link__text {
   display: flex;
@@ -2477,7 +2476,7 @@ html.dark .calculator-basic__input {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .calculators__subtitle {
   font-size: 1.875rem;
@@ -2565,17 +2564,17 @@ html.dark .calculators-category__title {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: center;
-  color: #2BA8E0;
+  color: #18a69d;
   transition: 0.15s ease;
 }
 .calculator-category__link:hover {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 html.dark .calculator-category__link {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 html.dark .calculator-category__link:hover {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .company__container {
   margin: 0 auto;
@@ -2836,7 +2835,7 @@ html.dark .air-datepicker-body--cells.-years- {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #2BA8E0;
+  background-color: #18a69d;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -2977,8 +2976,8 @@ html.dark .air-datepicker-cell.-day-.-other-month-:hover {
 }
 .timepicker__input:focus {
   border-width: 2px;
-  border-color: #2BA8E0;
-  color: #2BA8E0;
+  border-color: #18a69d;
+  color: #18a69d;
 }
 .timepicker__input:focus::-moz-placeholder {
   opacity: 0;
@@ -3052,8 +3051,8 @@ html.dark .timepicker__input::placeholder {
   color: #fff;
 }
 html.dark .timepicker__input:focus {
-  border-color: #2BA8E0;
-  color: #2BA8E0;
+  border-color: #18a69d;
+  color: #18a69d;
 }
 .tag {
   display: inline;
@@ -3195,12 +3194,12 @@ html.dark .calculator-error__item::before {
   background-color: #fecaca;
 }
 .table-cell {
-  padding: 16px 24px;
+  padding: 20px 24px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 24px;
   color: #374151;
-  background-color: #eff6ff;
+  background-color: #F0FDFB;
 }
 .table-cell--legend {
   display: flex;
@@ -3215,7 +3214,7 @@ html.dark .calculator-error__item::before {
   line-height: 1.25rem;
 }
 .table-cell--dark {
-  background-color: #dbeafe;
+  background-color: #2D2D2D;
 }
 .table-cell--only {
   padding: 32px 24px;
@@ -3283,12 +3282,13 @@ html.dark .calculator-error__item::before {
 }
 .table-cell--only-title {
   text-transform: uppercase;
-  color: #312e81;
+  color: #18a69d;
   letter-spacing: 0.05em;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   line-height: 1rem;
-  font-weight: 500;
+  font-weight: bold;
 }
+
 .table-cell--nogap {
   gap: 4px;
 }
@@ -3336,19 +3336,19 @@ html.dark .table-cell--fraction-text {
   border-color: #2f4a71;
 }
 .result-table {
-  background: #eff6ff;
+  background: #ffff;
   border-collapse: collapse;
   min-width: 100px;
   width: 100%;
 }
 .result-table td,
 .result-table th {
-  padding: 1rem 1.5rem;
+  padding: 1rem 40px;
   font-size: 0.875rem;
   line-height: 1.25rem;
   white-space: nowrap;
   text-align: left;
-  font-weight: 400;
+  font-weight: bold;
 }
 .result-table td.wrap,
 .result-table th.wrap {
@@ -3416,11 +3416,11 @@ html.dark .table-cell--fraction-text {
   border-bottom-right-radius: 0 !important;
 }
 .result-table td {
-  border-color: #dbeafe;
+  border-color: #2D2D2D;
 }
 .result-table th {
-  background: #dbeafe;
-  border-color: #eff6ff;
+  background: #CEF9F2;
+  border-color: #2D2D2D;
 }
 .result-table th.indigo {
   text-transform: uppercase;
@@ -3428,7 +3428,7 @@ html.dark .table-cell--fraction-text {
   letter-spacing: 0.05em;
   font-size: 0.75rem;
   line-height: 1rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 .result-table th.indigo span {
   text-transform: lowercase;
@@ -3789,7 +3789,7 @@ html.dark .table-progress-list__item {
   left: 40%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #2BA8E0;
+  background: #18a69d;
   border-radius: 50%;
   position: absolute;
   border: 2px solid #fff;
@@ -4040,7 +4040,7 @@ html.dark .result-age .green-cell {
 .result-controls__button {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .result-legend-items {
   display: flex;
@@ -4158,14 +4158,14 @@ html.dark .calculator-content__geometry path[fill="#fff"],
 html.dark .calculator-content__geometry rect[fill="#fff"] {
   fill: #1f2937;
 }
-html.dark .calculator-content__geometry circle[stroke="#2BA8E0"],
-html.dark .calculator-content__geometry ellipse[stroke="#2BA8E0"],
-html.dark .calculator-content__geometry path[stroke="#2BA8E0"],
-html.dark .calculator-content__geometry rect[stroke="#2BA8E0"] {
-  stroke: #2BA8E0;
+html.dark .calculator-content__geometry circle[stroke="#18a69d"],
+html.dark .calculator-content__geometry ellipse[stroke="#18a69d"],
+html.dark .calculator-content__geometry path[stroke="#18a69d"],
+html.dark .calculator-content__geometry rect[stroke="#18a69d"] {
+  stroke: #18a69d;
 }
-html.dark .calculator-content__geometry path[fill="#2BA8E0"] {
-  fill: #2BA8E0;
+html.dark .calculator-content__geometry path[fill="#18a69d"] {
+  fill: #18a69d;
 }
 .calculator-content--small {
   padding: 12px 32px;
@@ -4272,7 +4272,7 @@ script + html.dark .calculator-content {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25rem;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .calculator-content-head--always {
   pointer-events: none;
@@ -4720,7 +4720,7 @@ html.dark .dice-point {
   pointer-events: none;
 }
 html.dark .fraction-button {
-  background: #2BA8E0;
+  background: #18a69d;
   outline-color: #;
   color: #fff;
 }
@@ -4740,7 +4740,7 @@ html.dark .fraction-button--only {
   z-index: -1;
 }
 .fraction-radio:checked + .fraction-button {
-  outline-color: #2BA8E0;
+  outline-color: #18a69d;
   z-index: 20;
   position: relative;
 }
@@ -5021,7 +5021,7 @@ html.dark .calculator-about__wrapper {
   list-style: none !important;
 }
 .calculator-about a {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .calculator-about a:hover {
   color: #;
@@ -5296,7 +5296,7 @@ html.dark .calculator-related__text--title {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .categories__title {
   font-size: 1.875rem;
@@ -5486,7 +5486,7 @@ html.dark .page-about {
   line-height: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #2BA8E0;
+  color: #18a69d;
   letter-spacing: 0.025em;
 }
 @media only screen and (min-width: 768px) {
@@ -5532,7 +5532,7 @@ html.dark .page-about {
   color: #6b7280;
 }
 .about a {
-  color: #2BA8E0;
+  color: #18a69d;
   text-decoration: underline;
   text-underline-offset: 4px;
   transition: 0.15s;
@@ -5618,7 +5618,7 @@ html.dark .about ul li {
   color: #d1d5db;
 }
 html.dark .about a {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 html.dark .about h2:not(.about__title) {
   color: #fff;
@@ -5796,7 +5796,7 @@ html.dark .contacts-address__text {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 800;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .not-found__line {
   height: 100px;
@@ -5815,7 +5815,7 @@ html.dark .contacts-address__text {
   line-height: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #2BA8E0;
+  color: #18a69d;
   letter-spacing: 0.025em;
 }
 .not-found__title {
@@ -5841,7 +5841,7 @@ html.dark .contacts-address__text {
   margin-right: auto;
   margin-top: 2.5rem;
   padding: 0.5rem 0.75rem;
-  background: #2BA8E0;
+  background: #18a69d;
   color: #fff;
   font-size: 0.875rem;
   line-height: 1.25rem;
