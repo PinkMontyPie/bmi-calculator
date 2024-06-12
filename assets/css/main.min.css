@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
 
-body,button {
+body,
+button {
   font-family: "IBM Plex Sans Thai", sans-serif;
 }
 
@@ -1287,7 +1288,7 @@ html.dark
   .calculator-content--scientific
   button:not(.button-switcher).action:hover {
   border-color: #a5b4fc;
-  background-color: #;
+  background-color: #18a69d;
 }
 html.dark .calculator-content--basic button:not(.button-switcher).action-dark,
 html.dark
@@ -1439,7 +1440,7 @@ html.dark
   z-index: -1;
 }
 .button-switcher:not(.button-switcher--active):hover {
-  background: #F0FDFB;
+  background: #f0fdfb;
 }
 .button-switcher path[stroke] {
   stroke: #9ca3af;
@@ -1461,8 +1462,8 @@ html.dark
   z-index: 10;
 }
 .button-switcher--active::after {
-  border-color: #CEF9F2;
-  background:  #F0FDFB;
+  border-color: #cef9f2;
+  background: #f0fdfb;
 }
 .button-switcher--active path[stroke] {
   stroke: #18a69d;
@@ -1471,7 +1472,7 @@ html.dark
   fill: #18a69d;
 }
 .button-switcher--active .button-switcher__text {
-  color: #312e81;
+  color: #2d2d2d;
 }
 .button-switcher--top {
   border-bottom-left-radius: 0 !important;
@@ -3106,7 +3107,8 @@ html.dark .tag--purple {
 .calculator-result {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.0588235294),    0 1px 3px 0 rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.0588235294),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1019607843);
   background-color: #eff6ff;
   overflow: hidden;
   -webkit-border-radius: 8px;
@@ -3194,12 +3196,12 @@ html.dark .calculator-error__item::before {
   background-color: #fecaca;
 }
 .table-cell {
-  padding: 20px 24px;
+  padding: 20px 40px;
   font-size: 18px;
   font-weight: normal;
   line-height: 24px;
   color: #374151;
-  background-color: #F0FDFB;
+  background-color: #f0fdfb;
 }
 .table-cell--legend {
   display: flex;
@@ -3214,7 +3216,7 @@ html.dark .calculator-error__item::before {
   line-height: 1.25rem;
 }
 .table-cell--dark {
-  background-color: #2D2D2D;
+  background-color: #CEF9F2;
 }
 .table-cell--only {
   padding: 32px 24px;
@@ -3315,10 +3317,10 @@ html.dark .calculator-error__item::before {
 }
 @media only screen and (max-width: 768px) {
   .table-cell--only-title {
-    padding: 16px;
+    padding: 25px 40px;
   }
   .table-cell--only {
-    padding: 32px 16px;
+    padding: 30px 40px;
   }
 }
 html.dark .table-cell {
@@ -3336,7 +3338,7 @@ html.dark .table-cell--fraction-text {
   border-color: #2f4a71;
 }
 .result-table {
-  background: #ffff;
+  background: #f0fdfb;
   border-collapse: collapse;
   min-width: 100px;
   width: 100%;
@@ -3416,15 +3418,15 @@ html.dark .table-cell--fraction-text {
   border-bottom-right-radius: 0 !important;
 }
 .result-table td {
-  border-color: #2D2D2D;
+  border-color: #CEF9F2;
 }
 .result-table th {
   background: #CEF9F2;
-  border-color: #2D2D2D;
+  border-color: #CEF9F2;
 }
 .result-table th.indigo {
   text-transform: uppercase;
-  color: #312e81;
+  color: #18a69d ;
   letter-spacing: 0.05em;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -3766,7 +3768,14 @@ html.dark .table-progress-list__item {
   height: 0.5rem;
   border-radius: 6px;
   position: relative;
-  background: linear-gradient(    90deg,    #ff8686 0,    #ffdd84 25%,    #9cff84 50%,    #ffdd86 75%,    #ff8585 100%  );
+  background: linear-gradient(
+    90deg,
+    #ff8686 0,
+    #ffdd84 25%,
+    #9cff84 50%,
+    #ffdd86 75%,
+    #ff8585 100%
+  );
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -4282,7 +4291,7 @@ html.dark .calculator-content-head__title {
 }
 @media only screen and (max-width: 768px) {
   .calculator-content-head {
-    padding: 16px;
+    padding: 16px 40px;
   }
 }
 .calculator-content-body {
@@ -4294,7 +4303,7 @@ html.dark .calculator-content-head__title {
 }
 @media only screen and (max-width: 768px) {
   .calculator-content-body {
-    padding: 0 16px;
+    padding: 0 40px;
   }
 }
 html.dark
@@ -4701,7 +4710,7 @@ html.dark .dice-point {
   justify-content: center;
   background: #eef2ff;
   outline: 1px solid #c3d0fa;
-  color: #;
+  color: #18a69d;
   font-size: 1.5rem;
   line-height: 2rem;
   width: 35px;
@@ -4721,11 +4730,11 @@ html.dark .dice-point {
 }
 html.dark .fraction-button {
   background: #18a69d;
-  outline-color: #;
+  outline-color: #18a69d;
   color: #fff;
 }
 html.dark .fraction-button:hover {
-  background: #;
+  background: #18a69d;
 }
 html.dark .fraction-button--only {
   background: #374151;
@@ -5014,7 +5023,7 @@ html.dark .calculator-about__wrapper {
   padding: 0 !important;
 }
 .calculator-about > ol:nth-child(2) li:hover {
-  color: #;
+  color: #18a69d;
 }
 .calculator-about > ol:nth-child(2) ol {
   padding-top: 0 !important;
@@ -5024,7 +5033,7 @@ html.dark .calculator-about__wrapper {
   color: #18a69d;
 }
 .calculator-about a:hover {
-  color: #;
+  color: #18a69d;
 }
 .calculator-about li {
   padding-left: 0.375em;
@@ -5538,8 +5547,9 @@ html.dark .page-about {
   transition: 0.15s;
 }
 .about a:hover {
-  color: #;
+  color:   #18a69d;
 }
+
 .about strong {
   color: #111827;
 }
@@ -5849,7 +5859,7 @@ html.dark .contacts-address__text {
   border-radius: 6px;
 }
 .not-found__link:hover {
-  background: #;
+  background: #18a69d;
 }
 html.dark .not-found {
   background: #1f2937;
